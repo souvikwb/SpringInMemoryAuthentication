@@ -12,4 +12,14 @@ public class HealthController {
 	public String healthCheck() {
 		return "OK";
 	}
+	
+	@RequestMapping(value="/admin", method=RequestMethod.GET)
+	public String admin() {
+		return "Welcome Admin";
+	}
+	
+	@RequestMapping(value="/user", method=RequestMethod.GET)
+	public String user() {
+		return "Welcome User";
+	}
 }
